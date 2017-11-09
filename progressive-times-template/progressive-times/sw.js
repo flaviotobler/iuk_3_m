@@ -24,7 +24,7 @@ self.addEventListener('fetch', event => {
 			if(response){
 				return response;
 			}
-			if(event.request.headers.get('save-data')){
+			else if(event.request.headers.get('save-data')){
 				if(event.request.url.includes('fonts.googleapis.com')){
 					event.respondWith(new Response('',{status: 417, statusText: 'Ignore fonts to save data.'}));
 				}
