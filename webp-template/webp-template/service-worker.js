@@ -10,7 +10,7 @@ self.addEventListener('fetch', function(event) {
 		}
 		if(supportsWebp){
 			var req = event.request.clone();
-			var returnUrl = req.url.substr(0, req.url.lastIndex£Of(".")) + ".webp";
+			var returnUrl = req.url.substr(0, req.url.lastIndexOf(".")) + ".webp";
 			event.respondWith(
 				fetch(returnUrl, {
 					mode: 'no-cors'
