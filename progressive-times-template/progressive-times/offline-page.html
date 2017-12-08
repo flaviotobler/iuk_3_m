@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Progressive Times - Article</title>
+  <title>Progressive Times - You are offline</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway|Merriweather" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/site.css">
   <!-- Adress bar styling -->
@@ -15,15 +15,11 @@
 </head>
 <body>
   <!-- header -->
-  <div id="article-header">
-    <div id="article-title"></div>
+  <div id="header-offline">
+    <img id="logo-offline" src="./images/newspaper.svg" />
+    <h1>Progressive Times</h1>
+    <h6>Whoops! It looks like you are currently offline.</h6>
   </div>
-  <!-- article -->
-  <p id="article"></p>
-  <hr>
-  <div id="offline"></div>
-  <!-- scripts -->
-  <script async src="./js/main.js"></script>
   <script>
   // Register the service worker
   if ('serviceWorker' in navigator) {

@@ -14,23 +14,3 @@
   <link rel="manifest" href="./manifest.json">
 </head>
 <body>
-  <!-- header -->
-  <div id="article-header">
-    <div id="article-title"></div>
-  </div>
-  <!-- article -->
-  <p id="article"></p>
-  <hr>
-  <div id="offline"></div>
-  <!-- scripts -->
-  <script async src="./js/main.js"></script>
-  <script>
-  // Register the service worker
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').then(function(registration) {
-      // Registration was successful
-    });
-  }
-  </script>
-</body>
-</html>
